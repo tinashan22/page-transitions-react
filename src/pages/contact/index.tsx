@@ -1,3 +1,4 @@
+import Cards from "@/components/Layout/Cards";
 import Curve from "@/components/Layout/Curve";
 import Steps from "@/components/Layout/Stairs";
 import Head from "next/head";
@@ -10,7 +11,8 @@ export default function ContactPage({}: {}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Curve backgroundColor="#cec2d6">
+      {/* <Curve backgroundColor="#cec2d6"> */}
+      <Cards>
         <section className="p-10 flex flex-col justify-center  min-h-screen text-black">
           <div className="pb-8">
             {" "}
@@ -43,7 +45,8 @@ export default function ContactPage({}: {}) {
             </p>
           </div>
         </section>
-      </Curve>
+      </Cards>
+      {/* </Curve> */}
     </>
   );
 }

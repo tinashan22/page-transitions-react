@@ -1,10 +1,12 @@
+import Cards from "@/components/Layout/Cards";
 import Curve from "@/components/Layout/Curve";
 import Steps from "@/components/Layout/Stairs";
 
 export default function AboutPage({}: {}) {
   return (
     //mt -54px to offset mt-14 applied in layout for global nav height
-    <Curve backgroundColor="#a3aa9d">
+    //  <Curve backgroundColor="#a3aa9d">
+    <Cards>
       <section className="p-10 flex flex-col justify-center  min-h-screen text-black">
         <div className="pb-8">
           {" "}
@@ -37,6 +39,7 @@ export default function AboutPage({}: {}) {
           </p>
         </div>
       </section>
-    </Curve>
+    </Cards>
+    //  </Curve>
   );
 }

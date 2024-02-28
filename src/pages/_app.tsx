@@ -7,7 +7,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <>
       <div className="main">
-        <GlobalNav />
+        {/* <GlobalNav /> */}
         <AnimatePresence mode="wait">
           <Component key={router.route} {...pageProps} />;
         </AnimatePresence>

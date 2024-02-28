@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Curve from "@/components/Layout/Curve";
 import Steps from "@/components/Layout/Stairs";
+import Cards from "@/components/Layout/Cards";
 
 const inter = Inter({
   weight: ["400", "500", "700"],
@@ -14,7 +15,8 @@ const inter = Inter({
 export default function Home() {
   return (
     <main className={`${inter.variable}`}>
-      <Curve backgroundColor={"#B0AD98"}>
+      {/* <Curve backgroundColor={"#B0AD98"}> */}
+      <Cards>
         <section className="p-10 flex flex-col justify-center  min-h-screen text-black">
           <div className="pb-8">
             {" "}
@@ -47,7 +49,8 @@ export default function Home() {
             </p>
           </div>
         </section>
-      </Curve>
+      </Cards>
+      {/* </Curve> */}
     </main>
   );
 }
