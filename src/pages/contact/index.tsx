@@ -1,24 +1,20 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import Curve from "@/components/Layout/Curve";
 import Steps from "@/components/Layout/Stairs";
+import Head from "next/head";
 
-const inter = Inter({
-  weight: ["400", "500", "700"],
-  style: ["normal"],
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-});
-
-export default function Home() {
+export default function ContactPage({}: {}) {
   return (
-    <main className={`${inter.variable}`}>
-      <Curve backgroundColor={"#B0AD98"}>
+    <>
+      <Head>
+        <title>Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Curve backgroundColor="#cec2d6">
         <section className="p-10 flex flex-col justify-center  min-h-screen text-black">
           <div className="pb-8">
             {" "}
-            <h1 className="font-inter text-[72px]">Home</h1>
+            <h1 className="font-inter text-[72px]">Contact</h1>
           </div>
 
           <div className="font-inter gap-10 flex ">
@@ -48,6 +44,6 @@ export default function Home() {
           </div>
         </section>
       </Curve>
-    </main>
+    </>
   );
 }
